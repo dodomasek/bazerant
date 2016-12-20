@@ -11,5 +11,5 @@ export class DropdownComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
+

@@ -2,3 +2,50 @@
   display: flex;
   flex-direction: row;
 }
+
+//settings buttons style.........
+.set-buttons {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  padding: 3px;
+
+}
+//first three buttons style.......
+.butt {
+}
+
+//container for things in dropdown menu.....
+.something {
+}
+
+.thing {
+}
+
+//dropdown button style..............
+.button {
+  height: 50px;
+  width: 150px;
+  cursor: pointer;
+}
+
+//all dropdown style................
+.dropdown {
+  position: relative;
+  display: inline-block;
+  right: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  margin: 15px 0 0 0;
+}
+
+.dropdown .dropdown-content {
+  display: block;
+}
