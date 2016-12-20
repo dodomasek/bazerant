@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
+ // ....funkcia ktora nezobrazuje okno
+  private shown: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
-}
+  // po kliknuti na button shown = negacia shown zobrazi a schova sa...
+  onButtonClick() {
+    this.shown = !this.shown;
+  }
 
+  // div v pozadi ktory umoznuje to aby sa pri kliknuti niekam inam okno schovalo...
+  somewhereButtonClick() {
+    this.shown = false;
+  }
+}

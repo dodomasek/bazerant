@@ -11,6 +11,7 @@
   padding: 3px;
 
 }
+
 //first three buttons style.......
 .butt {
 }
@@ -24,9 +25,15 @@
 
 //dropdown button style..............
 .button {
+  display: block;
   height: 50px;
   width: 150px;
   cursor: pointer;
+}
+
+//Dropdown button on hover & focus......
+.button:hover, .button:focus {
+  background-color: #3e8e41;
 }
 
 //all dropdown style................
@@ -36,16 +43,33 @@
   right: 0;
 }
 
+//all dropdown content hidden by default!..........
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   margin: 15px 0 0 0;
+  z-index: 1;
 }
 
-.dropdown .dropdown-content {
+// shows the dropdown menu.............
+.show {
   display: block;
+}
+// div behind dropdown menu what closes it.....
+.click {
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  background-color: brown;
+  opacity: 0.2;
+  &.show {
+    display: block;
+  }
 }

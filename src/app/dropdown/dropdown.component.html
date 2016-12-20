@@ -1,10 +1,12 @@
 <div class="dropdown column">
 
-  <div class="button" onclick="myFunction()">button</div>
+<!--link ktory nesmeruje nikam, otvara dropdown okno vdaka onbutton click..-->
+  <div href="javascript:void(0)" class="button" (click)="onButtonClick()">button</div>
 
-  <div class="dropdown-content" id="myDropdown">
+  <!--ng clas show ktory sa ukazuje a schovava -->
+  <div class="dropdown-content" [ngClass]="{show: shown}">
 
-    <ul class="set-buttons row">w
+    <ul class="set-buttons row">
       <li class="butt">set1</li>
       <li class="butt">set2</li>
       <li class="butt">set3</li>
@@ -20,3 +22,5 @@
 
   </div>
 </div>
+<!--ukazuje sa spolu s dropdown a po kliknuti do neho dropdown schova-->
+<div class="click" [ngClass]="{show: shown}" (click)="somewhereButtonClick()"></div>
