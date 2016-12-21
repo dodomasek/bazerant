@@ -1,9 +1,9 @@
 <div class="news">
-  <div class="flex-container row">
+  <div class="flex-container row" [ngCalss]="{add}">
+    <div class="flex-item">flex-item</div>cyklus ktory bude vracat
     <div class="flex-item">flex-item</div>
     <div class="flex-item">flex-item</div>
     <div class="flex-item">flex-item</div>
-    <div class="flex-item">flex-item</div>
-    <button class="add-flex-item"></button>
+    <button (click)="onClicked()" class="add-flex-item">+</button>
   </div>
 </div>

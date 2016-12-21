@@ -6,6 +6,8 @@
 
 .flex-container {
   align-items: center;
+  border: solid black 1px;
+  flex-wrap: wrap;
 }
 
 .flex-item {
@@ -24,4 +26,6 @@
 .add-flex-item {
   height: 30px;
   width: 30px;
+  background-color: transparent;
+  border: 2px solid black;
 }

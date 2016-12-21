@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
- // ....funkcia ktora nezobrazuje okno
+ // ....funkcia ktora nezobrazuje okno (pole)
   private shown: boolean = false;
 
   constructor() { }
