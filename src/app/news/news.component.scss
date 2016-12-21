@@ -3,3 +3,25 @@
   width: 995px;
   height: 800px;
 }
+
+.flex-container {
+  align-items: center;
+}
+
+.flex-item {
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.add-flex-item {
+  height: 30px;
+  width: 30px;
+}
