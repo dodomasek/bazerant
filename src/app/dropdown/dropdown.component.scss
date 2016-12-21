@@ -14,13 +14,27 @@
 
 //first three buttons style.......
 .butt {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  padding: 5px;
+  background-color: #3e8e41;
+  opacity: 0.5;
+
 }
 
 //container for things in dropdown menu.....
 .something {
+
 }
 
 .thing {
+  height: 25px;
+  width: 125px;
+  margin: 10px;
+  padding: 5px;
+  background-color: #3e8e41;
+  opacity: 0.5;
 }
 
 //dropdown button style..............
@@ -38,7 +52,6 @@
 
 //all dropdown style................
 .dropdown {
-  position: relative;
   display: inline-block;
   right: 0;
 }
