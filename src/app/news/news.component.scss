@@ -1,6 +1,6 @@
 .news {
   margin: 20px;
-  width: 995px;
+  width: auto;
   height: 800px;
 }
 
@@ -8,13 +8,17 @@
   align-items: center;
   border: solid black 1px;
   flex-wrap: wrap;
-}
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  }
 
 .flex-item {
-  height: 150px;
-  width: 150px;
-  margin: 5px;
+  height: auto;
+  width: auto;
+  margin: 11px;
   padding: 5px;
+  border: solid black 1px;
   background-color: #f9f9f9;
 }
 
@@ -28,4 +32,10 @@
   width: 30px;
   background-color: transparent;
   border: 2px solid black;
+position: absolute;
+}
+.item{
+  display: flex;
+  width: 150px;
+  height: auto;
 }
