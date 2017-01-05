@@ -8,6 +8,7 @@ import { MainbarComponent } from './mainbar/mainbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NewsComponent } from './news/news.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { NewpageComponent } from './newpage/newpage.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     MainbarComponent,
     SidebarComponent,
     NewsComponent,
-    DropdownComponent
+    DropdownComponent,
+    NewpageComponent
   ],
   imports: [
     BrowserModule,
