@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-dropdown',
@@ -6,13 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
- // ....funkcia ktora nezobrazuje okno (pole)
+  // ....funkcia ktora nezobrazuje okno (pole)
   private shown: boolean = false;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
+
   // po kliknuti na button shown = negacia shown zobrazi a schova sa...
   onButtonClick() {
     this.shown = !this.shown;

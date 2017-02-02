@@ -1,8 +1,17 @@
-<div class="allThings">
-<div tabindex="1" class="item">
+<div tabindex="1" class="item column" (click)="onDivClick()">
 
   <img src="/assets/images/dickbutt.gif" class="image">
 
   <div class="aboutItem">{{description}}</div>
 </div>
+
+<!--ng clas show ktory sa ukazuje a schovava -->
+<div class="wrap-show-content" [ngClass]="{show: shown}">
+  <div class="wrap-showed">
+    <img src="/assets/images/dickbutt.gif" class="image-opened">
+
+    <div class="exit-button" [ngClass]="{show: shown}" (click)="onDivClick()">
+      <img src="/assets/images/exit-button.png" class="exit-button-main">
+    </div>
+  </div>
 </div>
