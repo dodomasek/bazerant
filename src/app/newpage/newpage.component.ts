@@ -11,6 +11,9 @@ export class NewpageComponent implements OnInit {
 
   //toto umoznuje edit description pouzitej v newpage
   @Input() description: string;
+  @Input() link: string;
+  @Input() butonz: boolean = true;
+
 
   constructor() {
   }
@@ -22,6 +25,11 @@ export class NewpageComponent implements OnInit {
   onDivClick() {
     this.shown = !this.shown;
   }
-}
 
+// div v pozadi, kliknutim niekam inam okno schova...
+  closeImagePreview() {
+    console.log('yoloswag');
+    this.shown = false;
+  }
+}
 

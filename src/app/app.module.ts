@@ -9,6 +9,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NewsComponent } from './news/news.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { NewpageComponent } from './newpage/newpage.component';
+import { ItemlistComponent } from './itemlist/itemlist.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewpageComponent } from './newpage/newpage.component';
     SidebarComponent,
     NewsComponent,
     DropdownComponent,
-    NewpageComponent
+    NewpageComponent,
+    ItemlistComponent
   ],
   imports: [
     BrowserModule,

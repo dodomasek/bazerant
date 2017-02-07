@@ -1,17 +1,14 @@
 <div tabindex="1" class="item column" (click)="onDivClick()">
 
-  <img src="/assets/images/dickbutt.gif" class="image">
+  <img [src]="link" class="image">
 
-  <div class="aboutItem">{{description}}</div>
+  <div class="aboutItem" (click)="butonz">{{description}}</div>
+  <a class="tlacitko" title="wololo" *ngIf="butonz">tlacitko</a>
 </div>
 
 <!--ng clas show ktory sa ukazuje a schovava -->
-<div class="wrap-show-content" [ngClass]="{show: shown}">
-  <div class="wrap-showed">
-    <img src="/assets/images/dickbutt.gif" class="image-opened">
-
-    <div class="exit-button" [ngClass]="{show: shown}" (click)="onDivClick()">
-      <img src="/assets/images/exit-button.png" class="exit-button-main">
-    </div>
-  </div>
+<div class="show-content" [ngClass]="{show: shown}" >
+  <div class="click-anywhere" (click)="closeImagePreview()"></div>
+  <img [src]=link class="image-opened">
 </div>
+

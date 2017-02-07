@@ -9,16 +9,6 @@
   transition: transform 1s;
 }
 
-.image {
-  border: 1px solid black;
-  width: 330px;
-  height: auto;
-}
-
-.aboutItem {
-  //change font
-}
-
 .item:hover {
   transform: rotate(-10deg);
   transition-duration: 1.5s;
@@ -26,22 +16,30 @@
 
 .item:focus {
   box-shadow: 0px 0px 20px black;
+}
 
+.image {
+  border: 1px solid black;
+  width: 330px;
+  max-width: 330px;
+  height: auto;
 }
 
 // shows the content div.............
-.wrap-show-content {
+.show-content {
   height: 0;
   width: 100%;
-  position: absolute;
+  position: fixed;
+  display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   transition: opacity 0.5s;
   top: 0;
   left: 0;
   opacity: 0;
   overflow: hidden;
+  z-index: 999;
 
   &.show {
     height: 100%;
@@ -49,40 +47,25 @@
   }
 }
 
-.wrap-showed {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-end;
-}
-
 .image-opened {
-  position: relative;
   border: 1px solid black;
-  width: 600px;
-  margin: 150px 150px;
-  border: 1px solid black;
-
-
-}
-
-.exit-button {
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  &.show {
-    display: block;
-  }
-}
-
-.exit-button-main {
-  color: black;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  right: 0;
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 40px);
+  z-index: 1000;
 }
 
 .column {
   display: flex;
   flex-direction: column;
 }
+
+// div behind dropdown menu what closes it.....
+.click-anywhere {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+
